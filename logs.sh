@@ -6,7 +6,7 @@ echo " "
 echo " "
 for i in /var/log/boot.log /var/log/boot.log.1
 do
-        sudo cat $i | grep -e "---" | tail -n 20
+        sudo cat "$i" | grep -e "---" | tail -n 20
 done
 echo " "
 echo " "
