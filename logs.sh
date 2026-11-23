@@ -4,7 +4,7 @@ echo " "
 echo "\__ BOOT LOGS __/"
 echo " "
 echo " "
-for i in /var/log/boot.log /var/log/boot.log.1
+for i in /var/log/boot.log.1 /var/log/boot.log
 do
         sudo cat "$i" | grep -e "---" | tail -n 20
 done
